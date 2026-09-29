@@ -23,13 +23,11 @@ In this class we will learn how to deploy the tools you have learned in micro, m
 
 In micro, macro, and econometrics, you primarily a) saw the tools of economics as abstract tools that you _could_ apply to economic problems; and b) saw the final outputs but not how the sausage was made. In this class we'll seek to teach economics much more like a bench science: We want you to learn how to _do_ economics rather than "just" how to digest the economics that other people have done. 
 
+We will work on the assumption that you have access to AI tools, and that you will use them actively in your work. Indeed we will use them together in class. AI models are excellent tools to help you write code to build and analyze data. But three things are worth noting about the role of AI in applied economic analysis:
 
-
-Two features set it apart.
-
-First, it builds on your prior coursework in micro, macro, and econometrics. We will work with the underlying research designs (difference-in-differences, regression discontinuity, instrumental variables, randomized experiments, and machine-learning prediction) rather than only the headline findings.
-
-Second, it assumes you have access to AI tools, and it raises expectations to match. Work that once took a semester (building a new dataset, replicating a published result, or benchmarking a prediction model) is now within reach of a group of undergraduates in a couple of weeks. You will be graded on the quality of the economics and the evidence: good questions, credible designs, careful checks, and clear communication.
+1. You remain responsible for **all** the outputs. AI tools have a tendency to take convenient shortcuts, gloss over important details, or downright invent data/conclusions that are incorrect. If this happens in your work, that's not the AI's fault, it's yours. You need to be able to answer any and all questions about the code you used, the analysis you did and how you interpreted all the outputs.
+1. As of right now, AI models are pretty terrible (academic) writers. They make logical leaps, they appeal to authority without attribution or incorrectly. They also write in an overconfident and easily detectable _"voice"_. Put simply, AI-writing, at least in academic work, tends to be harder to follow and less compelling than human writing. In my experience, when doing academic writing (it works much better for other sorts of writing) it is good for editing things you already wrote a first draft of, but it is bad at taking your code/slides etc and turning them into compelling prose.
+1. The fact that we now have these powerful tools available to us means that now I can raise my expectations of what it's reasonable of me to expect from you. Work that once took a semester (building a new dataset, replicating a published result, or benchmarking a prediction model) is now within reach of a group of undergraduates in a couple of weeks. You will be graded on the quality of the economics and the evidence: good questions, credible designs, careful checks, and clear communication.
 
 **Acknowledgements.** This course draws heavily on *Using Big Data to Solve Economic and Social Problems* by Raj Chetty and Greg Bruich (Harvard Econ 50 / Stanford Econ 45), on Kyle Coombs's *Big Data and Economics* (Bates College ECON/DCS 368), and on *Data Science for Economists* (UC Berkeley Econ 148). I am grateful to their instructors for making their materials publicly available.
 
@@ -144,41 +142,41 @@ Leaderboard rank is only one part of the grade. A thoughtful, well-understood mo
 
 ## Schedule
 
-*Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.*
+*The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.*
 
 | # | Date | Topic | Readings / notes |
 |---|---|---|---|
-| 1 | Wed Jan 20 | Why big data? Course overview; the geography of opportunity and the "fading American dream" | Chetty, Hendren, Kline & Saez (2014); Chetty et al. (2017), *Science* · Set up GitHub and software before next class |
+| 1 | Wed Jan 20 | Course overview · **Equality of opportunity I:** the geography of opportunity and the "fading American dream"; describing data with regression and binned scatter plots | Chetty, Hendren, Kline & Saez (2014); Chetty et al. (2017), *Science* · Set up GitHub and software before next class |
 | 2 | Mon Jan 25 | **Git & GitHub I:** repositories, commits, push/pull; getting started in Codio · **Ex 1 groups assigned** | *Happy Git with R* · Bring laptops |
 | 3 | Wed Jan 27 | **Git & GitHub II:** branches, pull requests, merge conflicts, group workflow; reproducible projects in R and Stata · **Ex 1 released** | *Happy Git with R* · Bring laptops |
-| 4 | Mon Feb 1 | Describing data: the Opportunity Atlas, binned scatter plots, visualization | Chetty, Friedman, Hendren, Jones & Porter (2018), "The Opportunity Atlas" |
-| 5 | Wed Feb 3 | Neighborhoods and mobility I: Moving to Opportunity | Chetty, Hendren & Katz (2016) |
+| 4 | Mon Feb 1 | **Equality of opportunity II. Replication:** the Opportunity Atlas | Chetty, Friedman, Hendren, Jones & Porter (2026), "The Opportunity Atlas," *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20200108)] |
+| 5 | Wed Feb 3 | **Education I:** college admissions, returns to college, and mobility; regression discontinuity designs | Chetty, Friedman, Saez, Turner & Yagan (2020); Lee & Lemieux (2010), *JEL* |
 | | *Sun Feb 7* | ***Ex 1 due*** | |
 | 6 | Mon Feb 8 | **Ex 1 presentations** · **Ex 2 released** | |
-| 7 | Wed Feb 10 | Neighborhoods and mobility II: movers designs and exposure effects; working with AI coding tools | Chetty & Hendren (2018a) |
-| 8 | Mon Feb 15 | Building new data: APIs, scraping, text as data, and LLMs for data extraction; measuring polarization in political speech | Gentzkow, Kelly & Taddy (2019); Dell (2025), *JEL*; Gentzkow, Shapiro & Taddy (2019), *Econometrica* |
-| 9 | Wed Feb 17 | Development: measuring poverty with phones and satellites | Blumenstock, Cadamuro & On (2015); Jean et al. (2016) |
+| 7 | Wed Feb 10 | **Education II. Replication:** the returns to college admission for marginal students (RD) | Zimmerman (2014), *JOLE* [[link](https://www.journals.uchicago.edu/doi/abs/10.1086/676661)] |
+| 8 | Mon Feb 15 | **Gender I:** gender gaps in the labor market and the child penalty; event studies and difference-in-differences | Goldin (2014), *AER*; Kleven, Landais & Søgaard (2019), *AEJ: Applied*; Roth, Sant'Anna, Bilinski & Poe (2023), *J. Econometrics* |
+| 9 | Wed Feb 17 | **Gender II. Replication:** the Child Penalty Atlas (event study) | Kleven, Landais & Leite-Mariante (2025), *REStud* [[link](https://academic.oup.com/restud/article/92/5/3174/7840285)] |
 | | *Sun Feb 21* | ***Ex 2 due*** | |
 | 10 | Mon Feb 22 | **Ex 2 presentations** | |
-| 11 | Wed Feb 24 | Education I: measuring teacher impacts | Chetty, Friedman & Rockoff (2014a, b) |
-| 12 | Mon Mar 1 | Education II: colleges and mobility | Chetty, Friedman, Saez, Turner & Yagan (2020) |
-| 13 | Wed Mar 3 | Racial disparities in economic opportunity | Chetty, Hendren, Jones & Porter (2020) |
+| 11 | Wed Feb 24 | **Environment I:** climate, temperature, pollution, and health; panel data with fixed effects | Deschênes & Greenstone (2011), *AEJ: Applied*; Currie & Walker (2011), *AEJ: Applied*; Carleton et al. (2022), *QJE* |
+| 12 | Mon Mar 1 | **Environment II. Replication:** adaptation to extreme heat and the decline in the US temperature–mortality relationship (panel / DD) | Barreca, Clay, Deschênes, Greenstone & Shapiro (2016), *JPE* [[link](https://www.journals.uchicago.edu/doi/full/10.1086/684582)] |
+| 13 | Wed Mar 3 | **Anti-poverty programs I:** the safety net, take-up, and targeting; randomized experiments, balance, and power | Currie (2006), "The Take-Up of Social Benefits"; Duflo, Glennerster & Kremer (2007) · Last class covered on the midterm |
 | 14 | Mon Mar 8 | Midterm review | |
 | 15 | Wed Mar 10 | **Midterm exam** | |
 | | Mar 15–19 | ***Spring recess (no class)*** | |
-| 16 | Mon Mar 22 | Experiments: RCTs, balance, power; cash transfers and general equilibrium effects · **Ex 3 released** | [Experiments reading]; Egger et al. (2022), *Econometrica*; Vivalt et al. (2024) |
-| 17 | Wed Mar 24 | Criminal justice: judge-assignment designs and IV | Dobbie, Goldin & Yang (2018) |
-| 18 | Mon Mar 29 | Health: income and life expectancy; health insurance experiments | Chetty et al. (2016), *JAMA*; Finkelstein et al. (2012) |
-| 19 | Wed Mar 31 | Taxation and behavioral economics: the EITC and retirement savings | Chetty, Friedman & Saez (2013); Chetty et al. (2014) |
+| 16 | Mon Mar 22 | **Anti-poverty programs II. Replication:** information, hassle costs, and SNAP take-up (RCT) · **Ex 3 released** | Finkelstein & Notowidigdo (2019), *QJE* [[link](https://academic.oup.com/qje/article/134/3/1505/5484907)] |
+| 17 | Wed Mar 24 | **Taxes I:** tax policy, salience, and what people understand about taxes; survey and information experiments | Chetty, Looney & Kroft (2009), *AER*; Haaland, Roth & Wohlfart (2023), *JEL* |
+| 18 | Mon Mar 29 | **Taxes II. Replication:** how people reason about tax policy (survey experiments) | Stantcheva (2021), *QJE* [[link](https://academic.oup.com/qje/article/136/4/2309/6363701)] |
+| 19 | Wed Mar 31 | **Health I:** inequality in health, variation in physician decisions, and examiner designs | Chetty et al. (2016), *JAMA*; Currie & MacLeod (2017), *JOLE*; Chyn, Frandsen & Leslie (2025), *JEL* |
 | | *Sun Apr 4* | ***Ex 3 due*** | |
 | 20 | Mon Apr 5 | **Ex 3 presentations** · **Ex 4 released** | |
-| 21 | Wed Apr 7 | Methods: difference-in-differences and event studies (and recent critiques) | [DiD survey reading] |
-| 22 | Mon Apr 12 | Methods: regression discontinuity | [RDD reading] |
-| 23 | Wed Apr 14 | Environment: pollution and health | Currie & Walker (2011) |
+| 21 | Wed Apr 7 | **Health II. Replication:** diagnostic skill and selection among radiologists (quasi-random assignment) | Chan, Gentzkow & Yu (2022), *QJE* [[link](https://academic.oup.com/qje/article/137/2/729/6513421)] |
+| 22 | Mon Apr 12 | **Criminal justice I:** bail, pretrial detention, and incarceration; instrumental variables and judge designs | Dobbie, Goldin & Yang (2018), *AER*; Kleinberg, Lakkaraju, Leskovec, Ludwig & Mullainathan (2018), *QJE* |
+| 23 | Wed Apr 14 | **Criminal justice II. Replication:** measuring racial discrimination in bail decisions (IV) | Arnold, Dobbie & Hull (2022), *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20201653)] |
 | | *Sun Apr 18* | ***Ex 4 due*** | |
 | 24 | Mon Apr 19 | **Ex 4 presentations** · **Ex 5 (Hackathon) released** | |
-| 25 | Wed Apr 21 | Prediction I: prediction policy problems; regularization and cross-validation | Kleinberg, Ludwig, Mullainathan & Obermeyer (2015); Mullainathan & Spiess (2017) |
-| 26 | Mon Apr 26 | Prediction II: trees and forests, heterogeneous effects, and algorithmic bias | Wager & Athey (2018); Obermeyer et al. (2019) |
+| 25 | Wed Apr 21 | **Measuring poverty I:** measuring poverty with phones and satellites; prediction policy problems, regularization, and cross-validation | Blumenstock, Cadamuro & On (2015); Jean et al. (2016); Kleinberg, Ludwig, Mullainathan & Obermeyer (2015); Mullainathan & Spiess (2017) |
+| 26 | Mon Apr 26 | **Measuring poverty II. Replication:** targeting social assistance with machine-learning poverty maps (ML) | Smythe & Blumenstock (2022), *PNAS* [[link](https://www.pnas.org/doi/10.1073/pnas.2120025119)] |
 | | *Tue Apr 27* | ***Ex 5 (Hackathon) due*** | |
 | 27 | Wed Apr 28 | **Hackathon presentations and final leaderboard** | |
 | 28 | Mon May 3 | Final exam review; course wrap-up | Last day of classes |
