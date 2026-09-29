@@ -1,4 +1,4 @@
-# ECON 4420: Applied Data Analysis for Tackling Economic Problems
+# ECON 4420: Applied Data Analysis for Economics
 
 **Columbia University, Department of Economics · Spring 2027**
 
@@ -94,21 +94,9 @@ After every exercise, including the hackathon, the class following the deadline 
 
 ## Data exercises
 
-Exercises 1–4 are due at **11:59 pm on the Sunday** before the presentation session. The hackathon is due at **11:59 pm on Tuesday, Apr 27**.
+### Exercises 1–4: Exploring and Extending Existing Data
 
-| # | Exercise | Skills | Released | Due | Presented |
-|---|---|---|---|---|---|
-| 1 | **Describing Opportunity:** mapping and describing intergenerational mobility with the Opportunity Atlas | Git workflow, data cleaning and merging, visualization, binned scatter plots, regression | Wed Jan 27 | Sun Feb 7 | Mon Feb 8 |
-| 2 | **Building New Data: Text and Polarization:** building a dataset from political text and measuring how polarization in US political speech has changed over time | APIs, scraping, text as data, AI-assisted data extraction and validation | Mon Feb 8 | Sun Feb 21 | Mon Feb 22 |
-| 3 | **Experiments:** replicating and extending a randomized evaluation of cash transfers | Treatment effects, balance, power calculations, pre-registration | Mon Mar 22 | Sun Apr 4 | Mon Apr 5 |
-| 4 | **Natural Experiments:** replicating and extending a quasi-experimental study | Regression, DiD / event study, regression discontinuity, clustering, robustness | Mon Apr 5 | Sun Apr 18 | Mon Apr 19 |
-| 5 | **Prediction Hackathon** (see below) | Machine learning, cross-validation, regularization, out-of-sample evaluation | Mon Apr 19 | Tue Apr 27 | Wed Apr 28 |
-
-**Every exercise includes** a group repository containing code that runs end-to-end, a README explaining how to reproduce every result, a short written report [page limit], and an AI-use log (see the AI policy).
-
-**The bar is higher than in a course without AI.** Clean, working code is the minimum. Grades reflect the quality of the question, the credibility of the design, the checks you ran to convince yourselves the results are right, and the clarity of the write-up.
-
-### Exercises 2–4: paper options
+**Exercise 1: Describing Opportunity.** Your group will produce some data visualizations describing intergenerational mobility in the United States by running regressions and visualizing the results using binned scatterplots, and by producing maps to display the geographic variation in aspects of intergenerational mobility.
 
 **Exercise 2: Building New Data: Text and Polarization.** Your group will build a new dataset of US political speech and use it to describe how political polarization has changed over time. Choose one of two routes:
 
@@ -138,9 +126,25 @@ Grades are based on:
 
 Leaderboard rank is only one part of the grade. A thoughtful, well-understood model that places in the middle of the leaderboard can earn a top grade.
 
+### Data Exercise Schedule
+
+Exercises 1–4 are due at **11:59 pm on the Sunday** before the presentation session. The hackathon is due at **11:59 pm on Tuesday, Apr 27**.
+
+| # | Exercise | Skills | Released | Due | Presented |
+|---|---|---|---|---|---|
+| 1 | **Describing Opportunity:** mapping and describing intergenerational mobility with the Opportunity Atlas | Git workflow, data cleaning and merging, visualization, binned scatter plots, regression | Wed Jan 27 | Sun Feb 7 | Mon Feb 8 |
+| 2 | **Building New Data: Text and Polarization:** building a dataset from political text and measuring how polarization in US political speech has changed over time | APIs, scraping, text as data, AI-assisted data extraction and validation | Mon Feb 8 | Sun Feb 21 | Mon Feb 22 |
+| 3 | **Experiments:** replicating and extending a randomized evaluation of cash transfers | Treatment effects, balance, power calculations, pre-registration | Mon Mar 22 | Sun Apr 4 | Mon Apr 5 |
+| 4 | **Natural Experiments:** replicating and extending a quasi-experimental study | Regression, DiD / event study, regression discontinuity, clustering, robustness | Mon Apr 5 | Sun Apr 18 | Mon Apr 19 |
+| 5 | **Prediction Hackathon** (see below) | Machine learning, cross-validation, regularization, out-of-sample evaluation | Mon Apr 19 | Tue Apr 27 | Wed Apr 28 |
+
+**Every exercise includes** a group repository containing code that runs end-to-end, a README explaining how to reproduce every result, a short written report [page limit], and an AI-use log (see the AI policy).
+
+**The bar is higher than in a course without AI.** Clean, working code is the minimum. Grades reflect the quality of the question, the credibility of the design, the checks you ran to convince yourselves the results are right, and the clarity of the write-up.
+
 ---
 
-## Schedule
+## Class Schedule
 
 *The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.*
 
@@ -198,9 +202,17 @@ AI tools, including chat assistants and agentic coding tools such as Claude Code
 
 **Late work.** [e.g., each group has X late days for the term; after that, Y% per day.]
 
-**Academic integrity.** Collaboration within your group is expected. Sharing code or results between groups is not allowed except in designated collaborative activities. Undisclosed AI use, or submitting work you cannot explain, violates the course AI policy. See [Columbia academic integrity policy link].
+**Academic integrity.** 
+As members of an academic community, each of us has a responsibility to participate in scholarly discourse and research in a manner characterized by intellectual honesty and scholarly integrity, and plagiarism is a very serious violation. You are expected to adhere to Columbia University's Academic Integrity Policy, which can be found at [https://www.college.columbia.edu/academics/academicintegrity](https://www.college.columbia.edu/academics/academicintegrity).
 
-**Accessibility.** [Columbia Disability Services statement and link.]
+This does not mean that you cannot discuss the course material with your classmates. In fact, I encourage you to do so, and you will do the five class exercises in groups. Collaboration within your group is expected. Sharing code or results between groups is not allowed except in designated collaborative activities. You remain solely responsible for the work that you submit and so if I ask you questions about your work, you must be able to answer them. This means checking all generative AI outputs carefully to make sure you understand them and that they are correct. Undisclosed AI use, or submitting work you cannot explain, violates the course AI policy.
+
+The exams will be closed book. You are not allowed to communicate with others during the exam, nor consult with any books, notes or devices. Students suspected of academic dishonesty will be reported to the University's Center for Student Success and Intervention, and students who breach their intellectual responsibility in this regard should anticipate being asked to leave Columbia.
+
+If you have any questions about what constitutes academic dishonesty, please ask me. 
+
+**Accessibility.** 
+If you are a student with a disability and have a DS-certified `Accommodation Letter' please have the disability office inform me of the accommodations you have agreed with them by email. If you believe that you might have a disability that requires accommodation, you should contact Disability Services at [disability@columbia.edu](mailto:disability@columbia.edu).
 
 **Data use.** Some datasets carry use agreements. Follow them, and do not commit restricted data to GitHub.
 

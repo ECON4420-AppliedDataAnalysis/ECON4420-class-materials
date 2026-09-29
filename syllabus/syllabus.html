@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>syllabus.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="econ-4420-applied-data-analysis-for-tackling-economic-problems">ECON 4420: Applied Data Analysis for Tackling Economic Problems</h1>
+<p><strong>Columbia University, Department of Economics · Spring 2027</strong></p>
+<p><em>DRAFT. Items in [brackets] are placeholders.</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Instructor</strong></td>
+<td>Michael Carlos Best · mcb2270@columbia.edu</td>
+</tr>
+<tr>
+<td><strong>Meetings</strong></td>
+<td>Mondays &amp; Wednesdays, [Time] (75 minutes) · [Room]</td>
+</tr>
+<tr>
+<td><strong>Office hours</strong></td>
+<td>[Time / place / sign-up link]</td>
+</tr>
+<tr>
+<td><strong>Teaching assistants</strong></td>
+<td>[Names, emails, sections]</td>
+</tr>
+<tr>
+<td><strong>Course repository</strong></td>
+<td>https://github.com/ECON4420-AppliedDataAnalysis/ECON4420-class-materials</td>
+</tr>
+<tr>
+<td><strong>Discussion / announcements</strong></td>
+<td>[Ed / Courseworks]</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="course-description">Course description</h2>
+<p>In this class we will learn how to deploy the tools you have learned in micro, macro, and econometrics to study some of the most important economic problems facing society. We will leverage newly available large datasets and the tools of modern empirical economics and data science to study topics such as: economic opportunity, education, racial disparities, health, criminal justice, the environment, and development.</p>
+<p>In micro, macro, and econometrics, you primarily a) saw the tools of economics as abstract tools that you <em>could</em> apply to economic problems; and b) saw the final outputs but not how the sausage was made. In this class we'll seek to teach economics much more like a bench science: We want you to learn how to <em>do</em> economics rather than &quot;just&quot; how to digest the economics that other people have done.</p>
+<p>We will work on the assumption that you have access to AI tools, and that you will use them actively in your work. Indeed we will use them together in class. AI models are excellent tools to help you write code to build and analyze data. But three things are worth noting about the role of AI in applied economic analysis:</p>
+<ol>
+<li>You remain responsible for <strong>all</strong> the outputs. AI tools have a tendency to take convenient shortcuts, gloss over important details, or downright invent data/conclusions that are incorrect. If this happens in your work, that's not the AI's fault, it's yours. You need to be able to answer any and all questions about the code you used, the analysis you did and how you interpreted all the outputs.</li>
+<li>As of right now, AI models are pretty terrible (academic) writers. They make logical leaps, they appeal to authority without attribution or incorrectly. They also write in an overconfident and easily detectable <em>&quot;voice&quot;</em>. Put simply, AI-writing, at least in academic work, tends to be harder to follow and less compelling than human writing. In my experience, when doing academic writing (it works much better for other sorts of writing) it is good for editing things you already wrote a first draft of, but it is bad at taking your code/slides etc and turning them into compelling prose.</li>
+<li>The fact that we now have these powerful tools available to us means that now I can raise my expectations of what it's reasonable of me to expect from you. Work that once took a semester (building a new dataset, replicating a published result, or benchmarking a prediction model) is now within reach of a group of undergraduates in a couple of weeks. You will be graded on the quality of the economics and the evidence: good questions, credible designs, careful checks, and clear communication.</li>
+</ol>
+<p><strong>Acknowledgements.</strong> This course draws heavily on <em>Using Big Data to Solve Economic and Social Problems</em> by Raj Chetty and Greg Bruich (Harvard Econ 50 / Stanford Econ 45), on Kyle Coombs's <em>Big Data and Economics</em> (Bates College ECON/DCS 368), and on <em>Data Science for Economists</em> (UC Berkeley Econ 148). I am grateful to their instructors for making their materials publicly available.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>ECON UN3211 Intermediate Microeconomics</li>
+<li>ECON UN3213 Intermediate Macroeconomics</li>
+<li>ECON UN3412 Introduction to Econometrics</li>
+</ul>
+<p>No prior programming experience beyond what you used in Econometrics is required. We teach the course in <strong>R</strong> and <strong>Stata</strong>. That means that we have TA support for debugging your code in <strong>R</strong> or <strong>Stata</strong>. You may use <strong>Python</strong> if you prefer, but then this will mean that the TAs may not be able to help you debug your code.</p>
+<hr>
+<h2 id="how-the-course-works-github">How the course works: GitHub</h2>
+<p>The course is run primarily out of GitHub. The course repository holds the syllabus, lecture slides, code, data links, and exercise instructions. Exercises are distributed and submitted through <strong>Codio</strong>, which you can reach from [Courseworks]. Each group works in a shared Codio workspace backed by a private group GitHub repository, and the state of that repository at the deadline is your submission. [Confirm how Codio group projects and GitHub sync are set up.]</p>
+<p>The first two weeks include hands-on Git and GitHub instruction. By the end of Week 2 every student should be able to clone a repository, commit, push, open a pull request, and resolve a merge conflict. Before the first class, please:</p>
+<ol>
+<li>Create a GitHub account (use your Columbia email, or add it to your account).</li>
+<li>Install Git, plus R and/or Stata [version/license info] (or Python). You can work in RStudio or VS Code for R, in Stata's own interface or VS Code for Stata, and in VS Code for Python.</li>
+<li>Read chapters [X–Y] of Jenny Bryan, <em>Happy Git and GitHub for the useR</em> (https://happygitwithr.com).</li>
+</ol>
+<p><strong>Repository layout</strong></p>
+<pre class="hljs"><code><div>/syllabus        syllabus.md and syllabus.pdf
+/lectures        slides and lecture code, by week
+/exercises       instructions and starter code for Exercises 1–5
+/data            small datasets, plus links and download scripts for large ones
+/resources       Git guides, R/Stata references, AI-use guidance
+</div></code></pre>
+<hr>
+<h2 id="assessment">Assessment</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exercises 1–4 (group)</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Exercise 5: Prediction Hackathon (group)</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Midterm exam (individual), Wed Mar 10</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Final exam (individual)</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Individual reflections (one per exercise)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Participation (in-class activities, Git check-ins)</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="groups">Groups</h3>
+<p>You will work in groups of <strong>4</strong>. Groups are assigned at random for each exercise, including the hackathon, so you will work with different classmates throughout the term. If enrollment does not divide evenly by 4, some groups will have 3 or 5 members. Every group member is expected to contribute to the code, analysis, and writing, and the commit history in your group repository should reflect that.</p>
+<p><strong>Peer evaluations.</strong> After each exercise, every student submits a short confidential peer evaluation. Individual grades on group work may be adjusted, up or down, based on peer evaluations and repository contribution history.</p>
+<h3 id="individual-reflections">Individual reflections</h3>
+<p>Within 48 hours of each exercise deadline, each student submits a one-page individual reflection covering what you personally did, the most important thing you learned, one thing your group got wrong or would do differently, and how you used AI tools (see the AI policy).</p>
+<h3 id="presentations">Presentations</h3>
+<p>After every exercise, including the hackathon, the class following the deadline is a presentation session (a Monday for Exercises 1–4, and Wednesday, Apr 28 for the hackathon). <strong>Seven groups, selected at random at the start of class, present</strong>: 6 minutes of presentation plus 4 minutes of questions. Because any group may be selected, every group must submit slides with the exercise and be ready to present. The version committed at the deadline is the one you present. Any group member may be asked to answer any question, so every member should understand every part of the submission.</p>
+<hr>
+<h2 id="data-exercises">Data exercises</h2>
+<h3 id="exercises-14-exploring-and-extending-existing-data">Exercises 1–4: Exploring and Extending Existing Data</h3>
+<p><strong>Exercise 1: Describing Opportunity.</strong> Your group will produce some data visualizations describing intergenerational mobility in the United States by running regressions and visualizing the results using binned scatterplots, and by producing maps to display the geographic variation in aspects of intergenerational mobility.</p>
+<p><strong>Exercise 2: Building New Data: Text and Polarization.</strong> Your group will build a new dataset of US political speech and use it to describe how political polarization has changed over time. Choose one of two routes:</p>
+<ul>
+<li><strong>Update Gentzkow, Shapiro &amp; Taddy (2019).</strong> Extend their measure of partisanship in congressional speech past the end of their sample, using the Congressional Record, and document what has happened since.</li>
+<li><strong>Social media speech.</strong> Collect posts by US politicians and document how their language has changed over time. [X/Twitter API read access is now paid and the free academic tier has been discontinued. Confirm a feasible source before release, e.g., Bluesky's open API or an existing archive.]</li>
+</ul>
+<p><strong>Exercise 3: Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
+<ul>
+<li>Vivalt, Rhodes, Bartik, Broockman, Krause &amp; Miller (2024), on the effects of a guaranteed income in the United States.</li>
+<li>Egger, Haushofer, Miguel, Niehaus &amp; Walker (2022), <em>Econometrica</em>, on the general equilibrium effects of cash transfers in Kenya.</li>
+</ul>
+<p><strong>Exercise 4: Natural Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
+<ul>
+<li>Marx, Pons &amp; Rollet (2024), &quot;Electoral Turnovers,&quot; <em>Review of Economic Studies</em>, a close-elections regression discontinuity design. <a href="https://vrollet.github.io/files/Electoral_Turnovers_published.pdf">Paper</a> · <a href="https://zenodo.org/records/13314638">Replication package</a></li>
+<li>Akcigit, Grigsby, Nicholas &amp; Stantcheva (2022), &quot;Taxing Innovation in the Twentieth Century,&quot; <em>Quarterly Journal of Economics</em>, on the effects of taxes on innovation. <a href="https://dataverse.harvard.edu/file.xhtml?fileId=4750835&amp;version=1.1">Replication package</a></li>
+</ul>
+<h3 id="exercise-5-prediction-hackathon">Exercise 5: Prediction Hackathon</h3>
+<p>Your group will build a model to predict an economically interesting outcome, such as [upward mobility for small geographic units from Opportunity Atlas and Census covariates]. The teaching staff hold back the outcomes for a test sample. Groups submit predictions on the test sample, which are scored automatically and posted to a class leaderboard.</p>
+<p>Grades are based on:</p>
+<ul>
+<li><strong>Out-of-sample performance</strong> on the held-out test set [X%]</li>
+<li><strong>Economics:</strong> interpretation of which features matter and why, plus what the model should and should not be used for [X%]</li>
+<li><strong>Reproducibility and code quality</strong> [X%]</li>
+<li><strong>Presentation</strong> on Wed Apr 28, for the groups selected to present [X%]</li>
+</ul>
+<p>Leaderboard rank is only one part of the grade. A thoughtful, well-understood model that places in the middle of the leaderboard can earn a top grade.</p>
+<h3 id="data-exercise-schedule">Data Exercise Schedule</h3>
+<p>Exercises 1–4 are due at <strong>11:59 pm on the Sunday</strong> before the presentation session. The hackathon is due at <strong>11:59 pm on Tuesday, Apr 27</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Exercise</th>
+<th>Skills</th>
+<th>Released</th>
+<th>Due</th>
+<th>Presented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Describing Opportunity:</strong> mapping and describing intergenerational mobility with the Opportunity Atlas</td>
+<td>Git workflow, data cleaning and merging, visualization, binned scatter plots, regression</td>
+<td>Wed Jan 27</td>
+<td>Sun Feb 7</td>
+<td>Mon Feb 8</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Building New Data: Text and Polarization:</strong> building a dataset from political text and measuring how polarization in US political speech has changed over time</td>
+<td>APIs, scraping, text as data, AI-assisted data extraction and validation</td>
+<td>Mon Feb 8</td>
+<td>Sun Feb 21</td>
+<td>Mon Feb 22</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Experiments:</strong> replicating and extending a randomized evaluation of cash transfers</td>
+<td>Treatment effects, balance, power calculations, pre-registration</td>
+<td>Mon Mar 22</td>
+<td>Sun Apr 4</td>
+<td>Mon Apr 5</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Natural Experiments:</strong> replicating and extending a quasi-experimental study</td>
+<td>Regression, DiD / event study, regression discontinuity, clustering, robustness</td>
+<td>Mon Apr 5</td>
+<td>Sun Apr 18</td>
+<td>Mon Apr 19</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Prediction Hackathon</strong> (see below)</td>
+<td>Machine learning, cross-validation, regularization, out-of-sample evaluation</td>
+<td>Mon Apr 19</td>
+<td>Tue Apr 27</td>
+<td>Wed Apr 28</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every exercise includes</strong> a group repository containing code that runs end-to-end, a README explaining how to reproduce every result, a short written report [page limit], and an AI-use log (see the AI policy).</p>
+<p><strong>The bar is higher than in a course without AI.</strong> Clean, working code is the minimum. Grades reflect the quality of the question, the credibility of the design, the checks you ran to convince yourselves the results are right, and the clarity of the write-up.</p>
+<hr>
+<h2 id="class-schedule">Class Schedule</h2>
+<p><em>The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.</em></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Date</th>
+<th>Topic</th>
+<th>Readings / notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Wed Jan 20</td>
+<td>Course overview · <strong>Equality of opportunity I:</strong> the geography of opportunity and the &quot;fading American dream&quot;; describing data with regression and binned scatter plots</td>
+<td>Chetty, Hendren, Kline &amp; Saez (2014); Chetty et al. (2017), <em>Science</em> · Set up GitHub and software before next class</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Mon Jan 25</td>
+<td><strong>Git &amp; GitHub I:</strong> repositories, commits, push/pull; getting started in Codio · <strong>Ex 1 groups assigned</strong></td>
+<td><em>Happy Git with R</em> · Bring laptops</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wed Jan 27</td>
+<td><strong>Git &amp; GitHub II:</strong> branches, pull requests, merge conflicts, group workflow; reproducible projects in R and Stata · <strong>Ex 1 released</strong></td>
+<td><em>Happy Git with R</em> · Bring laptops</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mon Feb 1</td>
+<td><strong>Equality of opportunity II. Replication:</strong> the Opportunity Atlas</td>
+<td>Chetty, Friedman, Hendren, Jones &amp; Porter (2026), &quot;The Opportunity Atlas,&quot; <em>AER</em> [<a href="https://www.aeaweb.org/articles?id=10.1257/aer.20200108">link</a>]</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wed Feb 3</td>
+<td><strong>Education I:</strong> college admissions, returns to college, and mobility; regression discontinuity designs</td>
+<td>Chetty, Friedman, Saez, Turner &amp; Yagan (2020); Lee &amp; Lemieux (2010), <em>JEL</em></td>
+</tr>
+<tr>
+<td></td>
+<td><em>Sun Feb 7</em></td>
+<td><em><strong>Ex 1 due</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Mon Feb 8</td>
+<td><strong>Ex 1 presentations</strong> · <strong>Ex 2 released</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Wed Feb 10</td>
+<td><strong>Education II. Replication:</strong> the returns to college admission for marginal students (RD)</td>
+<td>Zimmerman (2014), <em>JOLE</em> [<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/676661">link</a>]</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Mon Feb 15</td>
+<td><strong>Gender I:</strong> gender gaps in the labor market and the child penalty; event studies and difference-in-differences</td>
+<td>Goldin (2014), <em>AER</em>; Kleven, Landais &amp; Søgaard (2019), <em>AEJ: Applied</em>; Roth, Sant'Anna, Bilinski &amp; Poe (2023), <em>J. Econometrics</em></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Wed Feb 17</td>
+<td><strong>Gender II. Replication:</strong> the Child Penalty Atlas (event study)</td>
+<td>Kleven, Landais &amp; Leite-Mariante (2025), <em>REStud</em> [<a href="https://academic.oup.com/restud/article/92/5/3174/7840285">link</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Sun Feb 21</em></td>
+<td><em><strong>Ex 2 due</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Mon Feb 22</td>
+<td><strong>Ex 2 presentations</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Wed Feb 24</td>
+<td><strong>Environment I:</strong> climate, temperature, pollution, and health; panel data with fixed effects</td>
+<td>Deschênes &amp; Greenstone (2011), <em>AEJ: Applied</em>; Currie &amp; Walker (2011), <em>AEJ: Applied</em>; Carleton et al. (2022), <em>QJE</em></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Mon Mar 1</td>
+<td><strong>Environment II. Replication:</strong> adaptation to extreme heat and the decline in the US temperature–mortality relationship (panel / DD)</td>
+<td>Barreca, Clay, Deschênes, Greenstone &amp; Shapiro (2016), <em>JPE</em> [<a href="https://www.journals.uchicago.edu/doi/full/10.1086/684582">link</a>]</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Wed Mar 3</td>
+<td><strong>Anti-poverty programs I:</strong> the safety net, take-up, and targeting; randomized experiments, balance, and power</td>
+<td>Currie (2006), &quot;The Take-Up of Social Benefits&quot;; Duflo, Glennerster &amp; Kremer (2007) · Last class covered on the midterm</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Mon Mar 8</td>
+<td>Midterm review</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Wed Mar 10</td>
+<td><strong>Midterm exam</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Mar 15–19</td>
+<td><em><strong>Spring recess (no class)</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Mon Mar 22</td>
+<td><strong>Anti-poverty programs II. Replication:</strong> information, hassle costs, and SNAP take-up (RCT) · <strong>Ex 3 released</strong></td>
+<td>Finkelstein &amp; Notowidigdo (2019), <em>QJE</em> [<a href="https://academic.oup.com/qje/article/134/3/1505/5484907">link</a>]</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Wed Mar 24</td>
+<td><strong>Taxes I:</strong> tax policy, salience, and what people understand about taxes; survey and information experiments</td>
+<td>Chetty, Looney &amp; Kroft (2009), <em>AER</em>; Haaland, Roth &amp; Wohlfart (2023), <em>JEL</em></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Mon Mar 29</td>
+<td><strong>Taxes II. Replication:</strong> how people reason about tax policy (survey experiments)</td>
+<td>Stantcheva (2021), <em>QJE</em> [<a href="https://academic.oup.com/qje/article/136/4/2309/6363701">link</a>]</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Wed Mar 31</td>
+<td><strong>Health I:</strong> inequality in health, variation in physician decisions, and examiner designs</td>
+<td>Chetty et al. (2016), <em>JAMA</em>; Currie &amp; MacLeod (2017), <em>JOLE</em>; Chyn, Frandsen &amp; Leslie (2025), <em>JEL</em></td>
+</tr>
+<tr>
+<td></td>
+<td><em>Sun Apr 4</em></td>
+<td><em><strong>Ex 3 due</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Mon Apr 5</td>
+<td><strong>Ex 3 presentations</strong> · <strong>Ex 4 released</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Wed Apr 7</td>
+<td><strong>Health II. Replication:</strong> diagnostic skill and selection among radiologists (quasi-random assignment)</td>
+<td>Chan, Gentzkow &amp; Yu (2022), <em>QJE</em> [<a href="https://academic.oup.com/qje/article/137/2/729/6513421">link</a>]</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Mon Apr 12</td>
+<td><strong>Criminal justice I:</strong> bail, pretrial detention, and incarceration; instrumental variables and judge designs</td>
+<td>Dobbie, Goldin &amp; Yang (2018), <em>AER</em>; Kleinberg, Lakkaraju, Leskovec, Ludwig &amp; Mullainathan (2018), <em>QJE</em></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Wed Apr 14</td>
+<td><strong>Criminal justice II. Replication:</strong> measuring racial discrimination in bail decisions (IV)</td>
+<td>Arnold, Dobbie &amp; Hull (2022), <em>AER</em> [<a href="https://www.aeaweb.org/articles?id=10.1257/aer.20201653">link</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Sun Apr 18</em></td>
+<td><em><strong>Ex 4 due</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>Mon Apr 19</td>
+<td><strong>Ex 4 presentations</strong> · <strong>Ex 5 (Hackathon) released</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Wed Apr 21</td>
+<td><strong>Measuring poverty I:</strong> measuring poverty with phones and satellites; prediction policy problems, regularization, and cross-validation</td>
+<td>Blumenstock, Cadamuro &amp; On (2015); Jean et al. (2016); Kleinberg, Ludwig, Mullainathan &amp; Obermeyer (2015); Mullainathan &amp; Spiess (2017)</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Mon Apr 26</td>
+<td><strong>Measuring poverty II. Replication:</strong> targeting social assistance with machine-learning poverty maps (ML)</td>
+<td>Smythe &amp; Blumenstock (2022), <em>PNAS</em> [<a href="https://www.pnas.org/doi/10.1073/pnas.2120025119">link</a>]</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Tue Apr 27</em></td>
+<td><em><strong>Ex 5 (Hackathon) due</strong></em></td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>Wed Apr 28</td>
+<td><strong>Hackathon presentations and final leaderboard</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>Mon May 3</td>
+<td>Final exam review; course wrap-up</td>
+<td>Last day of classes</td>
+</tr>
+<tr>
+<td></td>
+<td>[Finals]</td>
+<td><strong>Final exam</strong> [date and time set by the Registrar]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="policy-on-ai-tools">Policy on AI tools</h2>
+<p>AI tools, including chat assistants and agentic coding tools such as Claude Code, Cursor, and GitHub Copilot, are <strong>allowed and encouraged</strong> in this course. Learning to use them well is one of the course's goals.</p>
+<ol>
+<li><strong>You own everything you submit.</strong> &quot;The AI did it&quot; is never an explanation for an error. Any group member may be asked to explain any line of code or any number in your report, both in presentations and in grading.</li>
+<li><strong>Document your use.</strong> Each exercise repository must include an <code>AI_LOG.md</code> briefly describing which tools you used, for what, and where they got something wrong that you caught. Honest, specific logs are rewarded; they are not penalized.</li>
+<li><strong>Verify.</strong> AI tools can invent citations, variables, and results. Check every citation, and confirm that the data and code actually produce every reported number.</li>
+<li><strong>Expectations are calibrated to AI access.</strong> Exercises are designed assuming you have these tools. A submission that would have been excellent without AI may be average in this course.</li>
+<li><strong>Individual reflections and peer evaluations are your own.</strong> Write these without AI assistance.</li>
+</ol>
+<h2 id="other-policies">Other policies</h2>
+<p><strong>Late work.</strong> [e.g., each group has X late days for the term; after that, Y% per day.]</p>
+<p><strong>Academic integrity.</strong>
+As members of an academic community, each of us has a responsibility to participate in scholarly discourse and research in a manner characterized by intellectual honesty and scholarly integrity, and plagiarism is a very serious violation. You are expected to adhere to Columbia University's Academic Integrity Policy, which can be found at <a href="https://www.college.columbia.edu/academics/academicintegrity">https://www.college.columbia.edu/academics/academicintegrity</a>.</p>
+<p>This does not mean that you cannot discuss the course material with your classmates. In fact, I encourage you to do so, and you will do the five class exercises in groups. Collaboration within your group is expected. Sharing code or results between groups is not allowed except in designated collaborative activities. You remain solely responsible for the work that you submit and so if I ask you questions about your work, you must be able to answer them. This means checking all generative AI outputs carefully to make sure you understand them and that they are correct. Undisclosed AI use, or submitting work you cannot explain, violates the course AI policy.</p>
+<p>The exams will be closed book. You are not allowed to communicate with others during the exam, nor consult with any books, notes or devices. Students suspected of academic dishonesty will be reported to the University's Center for Student Success and Intervention, and students who breach their intellectual responsibility in this regard should anticipate being asked to leave Columbia.</p>
+<p>If you have any questions about what constitutes academic dishonesty, please ask me.</p>
+<p><strong>Accessibility.</strong>
+If you are a student with a disability and have a DS-certified `Accommodation Letter' please have the disability office inform me of the accommodations you have agreed with them by email. If you believe that you might have a disability that requires accommodation, you should contact Disability Services at <a href="mailto:disability@columbia.edu">disability@columbia.edu</a>.</p>
+<p><strong>Data use.</strong> Some datasets carry use agreements. Follow them, and do not commit restricted data to GitHub.</p>
+<hr>
+<p><em>This syllabus is maintained as <code>syllabus/syllabus.md</code> in the course repository, and a PDF copy is generated from it. The GitHub version is authoritative.</em></p>
+
+</body>
+</html>
