@@ -92,6 +92,51 @@ After every exercise, including the hackathon, the class following the deadline 
 
 ---
 
+
+## Class Schedule
+
+*The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.*
+
+| # | Date | Topic | Readings / notes |
+|---|---|---|---|
+| 1 | Wed Jan 20 | Course overview · **Equality of opportunity I:** the geography of opportunity and the "fading American dream"; describing data with regression and binned scatter plots | Chetty, Hendren, Kline & Saez (2014); Chetty et al. (2017), *Science* · Set up GitHub and software before next class |
+| 2 | Mon Jan 25 | **Git & GitHub I:** repositories, commits, push/pull; getting started in Codio · **Ex 1 groups assigned** | *Happy Git with R* · Bring laptops |
+| 3 | Wed Jan 27 | **Git & GitHub II:** branches, pull requests, merge conflicts, group workflow; reproducible projects in R and Stata · **Ex 1 released** | *Happy Git with R* · Bring laptops |
+| 4 | Mon Feb 1 | **Equality of opportunity II. Replication:** the Opportunity Atlas | Chetty, Friedman, Hendren, Jones & Porter (2026), "The Opportunity Atlas," *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20200108)] |
+| 5 | Wed Feb 3 | **Education I:** college admissions, returns to college, and mobility; regression discontinuity designs | Chetty, Friedman, Saez, Turner & Yagan (2020); Lee & Lemieux (2010), *JEL* |
+| | *Sun Feb 7* | ***Ex 1 due*** | |
+| 6 | Mon Feb 8 | **Ex 1 presentations** · **Ex 2 released** | |
+| 7 | Wed Feb 10 | **Education II. Replication:** the returns to college admission for marginal students (RD) | Zimmerman (2014), *JOLE* [[link](https://www.journals.uchicago.edu/doi/abs/10.1086/676661)] |
+| 8 | Mon Feb 15 | **Gender I:** gender gaps in the labor market and the child penalty; event studies and difference-in-differences | Goldin (2014), *AER*; Kleven, Landais & Søgaard (2019), *AEJ: Applied*; Roth, Sant'Anna, Bilinski & Poe (2023), *J. Econometrics* |
+| 9 | Wed Feb 17 | **Gender II. Replication:** the Child Penalty Atlas (event study) | Kleven, Landais & Leite-Mariante (2025), *REStud* [[link](https://academic.oup.com/restud/article/92/5/3174/7840285)] |
+| | *Sun Feb 21* | ***Ex 2 due*** | |
+| 10 | Mon Feb 22 | **Ex 2 presentations** | |
+| 11 | Wed Feb 24 | **Environment I:** climate, temperature, pollution, and health; panel data with fixed effects | Deschênes & Greenstone (2011), *AEJ: Applied*; Currie & Walker (2011), *AEJ: Applied*; Carleton et al. (2022), *QJE* |
+| 12 | Mon Mar 1 | **Environment II. Replication:** adaptation to extreme heat and the decline in the US temperature–mortality relationship (panel / DD) | Barreca, Clay, Deschênes, Greenstone & Shapiro (2016), *JPE* [[link](https://www.journals.uchicago.edu/doi/full/10.1086/684582)] |
+| 13 | Wed Mar 3 | **Anti-poverty programs I:** the safety net, take-up, and targeting; randomized experiments, balance, and power | Currie (2006), "The Take-Up of Social Benefits"; Duflo, Glennerster & Kremer (2007) · Last class covered on the midterm |
+| 14 | Mon Mar 8 | Midterm review | |
+| 15 | Wed Mar 10 | **Midterm exam** | |
+| | Mar 15–19 | ***Spring recess (no class)*** | |
+| 16 | Mon Mar 22 | **Anti-poverty programs II. Replication:** information, hassle costs, and SNAP take-up (RCT) · **Ex 3 released** | Finkelstein & Notowidigdo (2019), *QJE* [[link](https://academic.oup.com/qje/article/134/3/1505/5484907)] |
+| 17 | Wed Mar 24 | **Taxes I:** tax policy, salience, and what people understand about taxes; survey and information experiments | Chetty, Looney & Kroft (2009), *AER*; Haaland, Roth & Wohlfart (2023), *JEL* |
+| 18 | Mon Mar 29 | **Taxes II. Replication:** how people reason about tax policy (survey experiments) | Stantcheva (2021), *QJE* [[link](https://academic.oup.com/qje/article/136/4/2309/6363701)] |
+| 19 | Wed Mar 31 | **Health I:** inequality in health, variation in physician decisions, and examiner designs | Chetty et al. (2016), *JAMA*; Currie & MacLeod (2017), *JOLE*; Chyn, Frandsen & Leslie (2025), *JEL* |
+| | *Sun Apr 4* | ***Ex 3 due*** | |
+| 20 | Mon Apr 5 | **Ex 3 presentations** · **Ex 4 released** | |
+| 21 | Wed Apr 7 | **Health II. Replication:** diagnostic skill and selection among radiologists (quasi-random assignment) | Chan, Gentzkow & Yu (2022), *QJE* [[link](https://academic.oup.com/qje/article/137/2/729/6513421)] |
+| 22 | Mon Apr 12 | **Criminal justice I:** bail, pretrial detention, and incarceration; instrumental variables and judge designs | Dobbie, Goldin & Yang (2018), *AER*; Kleinberg, Lakkaraju, Leskovec, Ludwig & Mullainathan (2018), *QJE* |
+| 23 | Wed Apr 14 | **Criminal justice II. Replication:** measuring racial discrimination in bail decisions (IV) | Arnold, Dobbie & Hull (2022), *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20201653)] |
+| | *Sun Apr 18* | ***Ex 4 due*** | |
+| 24 | Mon Apr 19 | **Ex 4 presentations** · **Ex 5 (Hackathon) released** | |
+| 25 | Wed Apr 21 | **Measuring poverty I:** measuring poverty with phones and satellites; prediction policy problems, regularization, and cross-validation | Blumenstock, Cadamuro & On (2015); Jean et al. (2016); Kleinberg, Ludwig, Mullainathan & Obermeyer (2015); Mullainathan & Spiess (2017) |
+| 26 | Mon Apr 26 | **Measuring poverty II. Replication:** targeting social assistance with machine-learning poverty maps (ML) | Smythe & Blumenstock (2022), *PNAS* [[link](https://www.pnas.org/doi/10.1073/pnas.2120025119)] |
+| | *Tue Apr 27* | ***Ex 5 (Hackathon) due*** | |
+| 27 | Wed Apr 28 | **Hackathon presentations and final leaderboard** | |
+| 28 | Mon May 3 | Final exam review; course wrap-up | Last day of classes |
+| | [Finals] | **Final exam** [date and time set by the Registrar] | |
+
+---
+
 ## Data exercises
 
 ### Exercises 1–4: Exploring and Extending Existing Data
@@ -144,50 +189,6 @@ Exercises 1–4 are due at **11:59 pm on the Sunday** before the presentation se
 
 ---
 
-## Class Schedule
-
-*The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.*
-
-| # | Date | Topic | Readings / notes |
-|---|---|---|---|
-| 1 | Wed Jan 20 | Course overview · **Equality of opportunity I:** the geography of opportunity and the "fading American dream"; describing data with regression and binned scatter plots | Chetty, Hendren, Kline & Saez (2014); Chetty et al. (2017), *Science* · Set up GitHub and software before next class |
-| 2 | Mon Jan 25 | **Git & GitHub I:** repositories, commits, push/pull; getting started in Codio · **Ex 1 groups assigned** | *Happy Git with R* · Bring laptops |
-| 3 | Wed Jan 27 | **Git & GitHub II:** branches, pull requests, merge conflicts, group workflow; reproducible projects in R and Stata · **Ex 1 released** | *Happy Git with R* · Bring laptops |
-| 4 | Mon Feb 1 | **Equality of opportunity II. Replication:** the Opportunity Atlas | Chetty, Friedman, Hendren, Jones & Porter (2026), "The Opportunity Atlas," *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20200108)] |
-| 5 | Wed Feb 3 | **Education I:** college admissions, returns to college, and mobility; regression discontinuity designs | Chetty, Friedman, Saez, Turner & Yagan (2020); Lee & Lemieux (2010), *JEL* |
-| | *Sun Feb 7* | ***Ex 1 due*** | |
-| 6 | Mon Feb 8 | **Ex 1 presentations** · **Ex 2 released** | |
-| 7 | Wed Feb 10 | **Education II. Replication:** the returns to college admission for marginal students (RD) | Zimmerman (2014), *JOLE* [[link](https://www.journals.uchicago.edu/doi/abs/10.1086/676661)] |
-| 8 | Mon Feb 15 | **Gender I:** gender gaps in the labor market and the child penalty; event studies and difference-in-differences | Goldin (2014), *AER*; Kleven, Landais & Søgaard (2019), *AEJ: Applied*; Roth, Sant'Anna, Bilinski & Poe (2023), *J. Econometrics* |
-| 9 | Wed Feb 17 | **Gender II. Replication:** the Child Penalty Atlas (event study) | Kleven, Landais & Leite-Mariante (2025), *REStud* [[link](https://academic.oup.com/restud/article/92/5/3174/7840285)] |
-| | *Sun Feb 21* | ***Ex 2 due*** | |
-| 10 | Mon Feb 22 | **Ex 2 presentations** | |
-| 11 | Wed Feb 24 | **Environment I:** climate, temperature, pollution, and health; panel data with fixed effects | Deschênes & Greenstone (2011), *AEJ: Applied*; Currie & Walker (2011), *AEJ: Applied*; Carleton et al. (2022), *QJE* |
-| 12 | Mon Mar 1 | **Environment II. Replication:** adaptation to extreme heat and the decline in the US temperature–mortality relationship (panel / DD) | Barreca, Clay, Deschênes, Greenstone & Shapiro (2016), *JPE* [[link](https://www.journals.uchicago.edu/doi/full/10.1086/684582)] |
-| 13 | Wed Mar 3 | **Anti-poverty programs I:** the safety net, take-up, and targeting; randomized experiments, balance, and power | Currie (2006), "The Take-Up of Social Benefits"; Duflo, Glennerster & Kremer (2007) · Last class covered on the midterm |
-| 14 | Mon Mar 8 | Midterm review | |
-| 15 | Wed Mar 10 | **Midterm exam** | |
-| | Mar 15–19 | ***Spring recess (no class)*** | |
-| 16 | Mon Mar 22 | **Anti-poverty programs II. Replication:** information, hassle costs, and SNAP take-up (RCT) · **Ex 3 released** | Finkelstein & Notowidigdo (2019), *QJE* [[link](https://academic.oup.com/qje/article/134/3/1505/5484907)] |
-| 17 | Wed Mar 24 | **Taxes I:** tax policy, salience, and what people understand about taxes; survey and information experiments | Chetty, Looney & Kroft (2009), *AER*; Haaland, Roth & Wohlfart (2023), *JEL* |
-| 18 | Mon Mar 29 | **Taxes II. Replication:** how people reason about tax policy (survey experiments) | Stantcheva (2021), *QJE* [[link](https://academic.oup.com/qje/article/136/4/2309/6363701)] |
-| 19 | Wed Mar 31 | **Health I:** inequality in health, variation in physician decisions, and examiner designs | Chetty et al. (2016), *JAMA*; Currie & MacLeod (2017), *JOLE*; Chyn, Frandsen & Leslie (2025), *JEL* |
-| | *Sun Apr 4* | ***Ex 3 due*** | |
-| 20 | Mon Apr 5 | **Ex 3 presentations** · **Ex 4 released** | |
-| 21 | Wed Apr 7 | **Health II. Replication:** diagnostic skill and selection among radiologists (quasi-random assignment) | Chan, Gentzkow & Yu (2022), *QJE* [[link](https://academic.oup.com/qje/article/137/2/729/6513421)] |
-| 22 | Mon Apr 12 | **Criminal justice I:** bail, pretrial detention, and incarceration; instrumental variables and judge designs | Dobbie, Goldin & Yang (2018), *AER*; Kleinberg, Lakkaraju, Leskovec, Ludwig & Mullainathan (2018), *QJE* |
-| 23 | Wed Apr 14 | **Criminal justice II. Replication:** measuring racial discrimination in bail decisions (IV) | Arnold, Dobbie & Hull (2022), *AER* [[link](https://www.aeaweb.org/articles?id=10.1257/aer.20201653)] |
-| | *Sun Apr 18* | ***Ex 4 due*** | |
-| 24 | Mon Apr 19 | **Ex 4 presentations** · **Ex 5 (Hackathon) released** | |
-| 25 | Wed Apr 21 | **Measuring poverty I:** measuring poverty with phones and satellites; prediction policy problems, regularization, and cross-validation | Blumenstock, Cadamuro & On (2015); Jean et al. (2016); Kleinberg, Ludwig, Mullainathan & Obermeyer (2015); Mullainathan & Spiess (2017) |
-| 26 | Mon Apr 26 | **Measuring poverty II. Replication:** targeting social assistance with machine-learning poverty maps (ML) | Smythe & Blumenstock (2022), *PNAS* [[link](https://www.pnas.org/doi/10.1073/pnas.2120025119)] |
-| | *Tue Apr 27* | ***Ex 5 (Hackathon) due*** | |
-| 27 | Wed Apr 28 | **Hackathon presentations and final leaderboard** | |
-| 28 | Mon May 3 | Final exam review; course wrap-up | Last day of classes |
-| | [Finals] | **Final exam** [date and time set by the Registrar] | |
-
----
-
 ## Policy on AI tools
 
 AI tools, including chat assistants and agentic coding tools such as Claude Code, Cursor, and GitHub Copilot, are **allowed and encouraged** in this course. Learning to use them well is one of the course's goals.
@@ -200,7 +201,7 @@ AI tools, including chat assistants and agentic coding tools such as Claude Code
 
 ## Other policies
 
-**Late work.** [e.g., each group has X late days for the term; after that, Y% per day.]
+**Late work.** You will have five deadlines in the semester for the five group projects. These deadlines cannot be moved unfortunately since we have the class presentations immediately afterwards and to be fair to the other members of your group and the other groups. The final commit of your group's repository before the deadline will be considered your group's submission. You have 10-14 days to work on the projects, please don't wait until the last minute to work on the project.
 
 **Academic integrity.** 
 As members of an academic community, each of us has a responsibility to participate in scholarly discourse and research in a manner characterized by intellectual honesty and scholarly integrity, and plagiarism is a very serious violation. You are expected to adhere to Columbia University's Academic Integrity Policy, which can be found at [https://www.college.columbia.edu/academics/academicintegrity](https://www.college.columbia.edu/academics/academicintegrity).

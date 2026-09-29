@@ -480,93 +480,6 @@ code {
 <h3 id="presentations">Presentations</h3>
 <p>After every exercise, including the hackathon, the class following the deadline is a presentation session (a Monday for Exercises 1–4, and Wednesday, Apr 28 for the hackathon). <strong>Seven groups, selected at random at the start of class, present</strong>: 6 minutes of presentation plus 4 minutes of questions. Because any group may be selected, every group must submit slides with the exercise and be ready to present. The version committed at the deadline is the one you present. Any group member may be asked to answer any question, so every member should understand every part of the submission.</p>
 <hr>
-<h2 id="data-exercises">Data exercises</h2>
-<h3 id="exercises-14-exploring-and-extending-existing-data">Exercises 1–4: Exploring and Extending Existing Data</h3>
-<p><strong>Exercise 1: Describing Opportunity.</strong> Your group will produce some data visualizations describing intergenerational mobility in the United States by running regressions and visualizing the results using binned scatterplots, and by producing maps to display the geographic variation in aspects of intergenerational mobility.</p>
-<p><strong>Exercise 2: Building New Data: Text and Polarization.</strong> Your group will build a new dataset of US political speech and use it to describe how political polarization has changed over time. Choose one of two routes:</p>
-<ul>
-<li><strong>Update Gentzkow, Shapiro &amp; Taddy (2019).</strong> Extend their measure of partisanship in congressional speech past the end of their sample, using the Congressional Record, and document what has happened since.</li>
-<li><strong>Social media speech.</strong> Collect posts by US politicians and document how their language has changed over time. [X/Twitter API read access is now paid and the free academic tier has been discontinued. Confirm a feasible source before release, e.g., Bluesky's open API or an existing archive.]</li>
-</ul>
-<p><strong>Exercise 3: Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
-<ul>
-<li>Vivalt, Rhodes, Bartik, Broockman, Krause &amp; Miller (2024), on the effects of a guaranteed income in the United States.</li>
-<li>Egger, Haushofer, Miguel, Niehaus &amp; Walker (2022), <em>Econometrica</em>, on the general equilibrium effects of cash transfers in Kenya.</li>
-</ul>
-<p><strong>Exercise 4: Natural Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
-<ul>
-<li>Marx, Pons &amp; Rollet (2024), &quot;Electoral Turnovers,&quot; <em>Review of Economic Studies</em>, a close-elections regression discontinuity design. <a href="https://vrollet.github.io/files/Electoral_Turnovers_published.pdf">Paper</a> · <a href="https://zenodo.org/records/13314638">Replication package</a></li>
-<li>Akcigit, Grigsby, Nicholas &amp; Stantcheva (2022), &quot;Taxing Innovation in the Twentieth Century,&quot; <em>Quarterly Journal of Economics</em>, on the effects of taxes on innovation. <a href="https://dataverse.harvard.edu/file.xhtml?fileId=4750835&amp;version=1.1">Replication package</a></li>
-</ul>
-<h3 id="exercise-5-prediction-hackathon">Exercise 5: Prediction Hackathon</h3>
-<p>Your group will build a model to predict an economically interesting outcome, such as [upward mobility for small geographic units from Opportunity Atlas and Census covariates]. The teaching staff hold back the outcomes for a test sample. Groups submit predictions on the test sample, which are scored automatically and posted to a class leaderboard.</p>
-<p>Grades are based on:</p>
-<ul>
-<li><strong>Out-of-sample performance</strong> on the held-out test set [X%]</li>
-<li><strong>Economics:</strong> interpretation of which features matter and why, plus what the model should and should not be used for [X%]</li>
-<li><strong>Reproducibility and code quality</strong> [X%]</li>
-<li><strong>Presentation</strong> on Wed Apr 28, for the groups selected to present [X%]</li>
-</ul>
-<p>Leaderboard rank is only one part of the grade. A thoughtful, well-understood model that places in the middle of the leaderboard can earn a top grade.</p>
-<h3 id="data-exercise-schedule">Data Exercise Schedule</h3>
-<p>Exercises 1–4 are due at <strong>11:59 pm on the Sunday</strong> before the presentation session. The hackathon is due at <strong>11:59 pm on Tuesday, Apr 27</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Exercise</th>
-<th>Skills</th>
-<th>Released</th>
-<th>Due</th>
-<th>Presented</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>Describing Opportunity:</strong> mapping and describing intergenerational mobility with the Opportunity Atlas</td>
-<td>Git workflow, data cleaning and merging, visualization, binned scatter plots, regression</td>
-<td>Wed Jan 27</td>
-<td>Sun Feb 7</td>
-<td>Mon Feb 8</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>Building New Data: Text and Polarization:</strong> building a dataset from political text and measuring how polarization in US political speech has changed over time</td>
-<td>APIs, scraping, text as data, AI-assisted data extraction and validation</td>
-<td>Mon Feb 8</td>
-<td>Sun Feb 21</td>
-<td>Mon Feb 22</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>Experiments:</strong> replicating and extending a randomized evaluation of cash transfers</td>
-<td>Treatment effects, balance, power calculations, pre-registration</td>
-<td>Mon Mar 22</td>
-<td>Sun Apr 4</td>
-<td>Mon Apr 5</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>Natural Experiments:</strong> replicating and extending a quasi-experimental study</td>
-<td>Regression, DiD / event study, regression discontinuity, clustering, robustness</td>
-<td>Mon Apr 5</td>
-<td>Sun Apr 18</td>
-<td>Mon Apr 19</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>Prediction Hackathon</strong> (see below)</td>
-<td>Machine learning, cross-validation, regularization, out-of-sample evaluation</td>
-<td>Mon Apr 19</td>
-<td>Tue Apr 27</td>
-<td>Wed Apr 28</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Every exercise includes</strong> a group repository containing code that runs end-to-end, a README explaining how to reproduce every result, a short written report [page limit], and an AI-use log (see the AI policy).</p>
-<p><strong>The bar is higher than in a course without AI.</strong> Clean, working code is the minimum. Grades reflect the quality of the question, the credibility of the design, the checks you ran to convince yourselves the results are right, and the clarity of the write-up.</p>
-<hr>
 <h2 id="class-schedule">Class Schedule</h2>
 <p><em>The course covers nine topics, with two classes each. In the first class we discuss the economics of the topic and the research design behind it. In the second we work through a replication of an influential recent paper together, in class, using the authors' replication package. Bring laptops to replication classes. Readings are listed by author and year. Full citations and links are on the course repository. Topics and dates may shift.</em></p>
 <table>
@@ -792,6 +705,93 @@ code {
 </tbody>
 </table>
 <hr>
+<h2 id="data-exercises">Data exercises</h2>
+<h3 id="exercises-14-exploring-and-extending-existing-data">Exercises 1–4: Exploring and Extending Existing Data</h3>
+<p><strong>Exercise 1: Describing Opportunity.</strong> Your group will produce some data visualizations describing intergenerational mobility in the United States by running regressions and visualizing the results using binned scatterplots, and by producing maps to display the geographic variation in aspects of intergenerational mobility.</p>
+<p><strong>Exercise 2: Building New Data: Text and Polarization.</strong> Your group will build a new dataset of US political speech and use it to describe how political polarization has changed over time. Choose one of two routes:</p>
+<ul>
+<li><strong>Update Gentzkow, Shapiro &amp; Taddy (2019).</strong> Extend their measure of partisanship in congressional speech past the end of their sample, using the Congressional Record, and document what has happened since.</li>
+<li><strong>Social media speech.</strong> Collect posts by US politicians and document how their language has changed over time. [X/Twitter API read access is now paid and the free academic tier has been discontinued. Confirm a feasible source before release, e.g., Bluesky's open API or an existing archive.]</li>
+</ul>
+<p><strong>Exercise 3: Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
+<ul>
+<li>Vivalt, Rhodes, Bartik, Broockman, Krause &amp; Miller (2024), on the effects of a guaranteed income in the United States.</li>
+<li>Egger, Haushofer, Miguel, Niehaus &amp; Walker (2022), <em>Econometrica</em>, on the general equilibrium effects of cash transfers in Kenya.</li>
+</ul>
+<p><strong>Exercise 4: Natural Experiments.</strong> Your group will replicate the main results of one of the following papers and then extend them:</p>
+<ul>
+<li>Marx, Pons &amp; Rollet (2024), &quot;Electoral Turnovers,&quot; <em>Review of Economic Studies</em>, a close-elections regression discontinuity design. <a href="https://vrollet.github.io/files/Electoral_Turnovers_published.pdf">Paper</a> · <a href="https://zenodo.org/records/13314638">Replication package</a></li>
+<li>Akcigit, Grigsby, Nicholas &amp; Stantcheva (2022), &quot;Taxing Innovation in the Twentieth Century,&quot; <em>Quarterly Journal of Economics</em>, on the effects of taxes on innovation. <a href="https://dataverse.harvard.edu/file.xhtml?fileId=4750835&amp;version=1.1">Replication package</a></li>
+</ul>
+<h3 id="exercise-5-prediction-hackathon">Exercise 5: Prediction Hackathon</h3>
+<p>Your group will build a model to predict an economically interesting outcome, such as [upward mobility for small geographic units from Opportunity Atlas and Census covariates]. The teaching staff hold back the outcomes for a test sample. Groups submit predictions on the test sample, which are scored automatically and posted to a class leaderboard.</p>
+<p>Grades are based on:</p>
+<ul>
+<li><strong>Out-of-sample performance</strong> on the held-out test set [X%]</li>
+<li><strong>Economics:</strong> interpretation of which features matter and why, plus what the model should and should not be used for [X%]</li>
+<li><strong>Reproducibility and code quality</strong> [X%]</li>
+<li><strong>Presentation</strong> on Wed Apr 28, for the groups selected to present [X%]</li>
+</ul>
+<p>Leaderboard rank is only one part of the grade. A thoughtful, well-understood model that places in the middle of the leaderboard can earn a top grade.</p>
+<h3 id="data-exercise-schedule">Data Exercise Schedule</h3>
+<p>Exercises 1–4 are due at <strong>11:59 pm on the Sunday</strong> before the presentation session. The hackathon is due at <strong>11:59 pm on Tuesday, Apr 27</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Exercise</th>
+<th>Skills</th>
+<th>Released</th>
+<th>Due</th>
+<th>Presented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Describing Opportunity:</strong> mapping and describing intergenerational mobility with the Opportunity Atlas</td>
+<td>Git workflow, data cleaning and merging, visualization, binned scatter plots, regression</td>
+<td>Wed Jan 27</td>
+<td>Sun Feb 7</td>
+<td>Mon Feb 8</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Building New Data: Text and Polarization:</strong> building a dataset from political text and measuring how polarization in US political speech has changed over time</td>
+<td>APIs, scraping, text as data, AI-assisted data extraction and validation</td>
+<td>Mon Feb 8</td>
+<td>Sun Feb 21</td>
+<td>Mon Feb 22</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Experiments:</strong> replicating and extending a randomized evaluation of cash transfers</td>
+<td>Treatment effects, balance, power calculations, pre-registration</td>
+<td>Mon Mar 22</td>
+<td>Sun Apr 4</td>
+<td>Mon Apr 5</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Natural Experiments:</strong> replicating and extending a quasi-experimental study</td>
+<td>Regression, DiD / event study, regression discontinuity, clustering, robustness</td>
+<td>Mon Apr 5</td>
+<td>Sun Apr 18</td>
+<td>Mon Apr 19</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Prediction Hackathon</strong> (see below)</td>
+<td>Machine learning, cross-validation, regularization, out-of-sample evaluation</td>
+<td>Mon Apr 19</td>
+<td>Tue Apr 27</td>
+<td>Wed Apr 28</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every exercise includes</strong> a group repository containing code that runs end-to-end, a README explaining how to reproduce every result, a short written report [page limit], and an AI-use log (see the AI policy).</p>
+<p><strong>The bar is higher than in a course without AI.</strong> Clean, working code is the minimum. Grades reflect the quality of the question, the credibility of the design, the checks you ran to convince yourselves the results are right, and the clarity of the write-up.</p>
+<hr>
 <h2 id="policy-on-ai-tools">Policy on AI tools</h2>
 <p>AI tools, including chat assistants and agentic coding tools such as Claude Code, Cursor, and GitHub Copilot, are <strong>allowed and encouraged</strong> in this course. Learning to use them well is one of the course's goals.</p>
 <ol>
@@ -802,7 +802,7 @@ code {
 <li><strong>Individual reflections and peer evaluations are your own.</strong> Write these without AI assistance.</li>
 </ol>
 <h2 id="other-policies">Other policies</h2>
-<p><strong>Late work.</strong> [e.g., each group has X late days for the term; after that, Y% per day.]</p>
+<p><strong>Late work.</strong> You will have five deadlines in the semester for the five group projects. These deadlines cannot be moved unfortunately since we have the class presentations immediately afterwards and to be fair to the other members of your group and the other groups. The final commit of your group's repository before the deadline will be considered your group's submission. You have 10-14 days to work on the projects, please don't wait until the last minute to work on the project.</p>
 <p><strong>Academic integrity.</strong>
 As members of an academic community, each of us has a responsibility to participate in scholarly discourse and research in a manner characterized by intellectual honesty and scholarly integrity, and plagiarism is a very serious violation. You are expected to adhere to Columbia University's Academic Integrity Policy, which can be found at <a href="https://www.college.columbia.edu/academics/academicintegrity">https://www.college.columbia.edu/academics/academicintegrity</a>.</p>
 <p>This does not mean that you cannot discuss the course material with your classmates. In fact, I encourage you to do so, and you will do the five class exercises in groups. Collaboration within your group is expected. Sharing code or results between groups is not allowed except in designated collaborative activities. You remain solely responsible for the work that you submit and so if I ask you questions about your work, you must be able to answer them. This means checking all generative AI outputs carefully to make sure you understand them and that they are correct. Undisclosed AI use, or submitting work you cannot explain, violates the course AI policy.</p>
